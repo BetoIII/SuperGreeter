@@ -11,7 +11,7 @@ sub GetContent()
     ' request the content feed from the API
     xfer = CreateObject("roURLTransfer")
     xfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
-    xfer.SetURL("https://file.notion.so/f/f/9b654de7-daea-4819-b7d3-919f39c8aae1/4d051906-5845-4176-a52e-351ac163c686/screenhost-feed.json?id=881527db-422d-48c6-b94f-a08f20f7e5c5&table=block&spaceId=9b654de7-daea-4819-b7d3-919f39c8aae1&expirationTimestamp=1698912000000&signature=L6ORzDJ3BxumZBJ7F-6L0DR3gEksMfldRtr08lefoBE&downloadName=screenhost-feed.json")
+    xfer.SetURL("https://supergreeter.co/content/screenhost-feed.json")
     rsp = xfer.GetToString()
     rootChildren = []
     rows = {}
