@@ -14,7 +14,7 @@
             showOptions="false"
             showClock="true"
             logoUri="pkg:/images/hd_overhang_logo.png"
-            translation="[1000,20]"
+            translation="[900,20]"
         />
         <Label
             id="hostWelcome"
