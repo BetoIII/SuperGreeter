@@ -16,7 +16,7 @@
 	        width="1020"
 			translation="[130,270]"
             font="font:MediumBoldSystemFont"
-            color="0x666666"
+            color="0xFFA346"
             visible="true"
 	    />
         <!-- Label with description of content.
