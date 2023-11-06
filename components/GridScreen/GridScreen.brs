@@ -1,5 +1,3 @@
-' ********** Copyright 2020 Roku Corp.  All Rights Reserved. **********
-
 ' entry point of GridScreen
 ' Note that we need to import this file in GridScreen.xml using relative path.
 sub Init()
@@ -21,10 +19,6 @@ sub OnItemFocused() ' invoked when another item is focused
     m.descriptionLabel.text = item.description
     ' update title label with title of focused item
     m.titleLabel.text = item.title
-    ' adding length of playback to the title if item length field was populated
-    if item.length <> invalid
-        m.titleLabel.text += " | " + GetTime(item.length)
-    end if
 end sub
 
 ' this method convert seconds to mm:ss format

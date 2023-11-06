@@ -14,21 +14,21 @@
             showOptions="false"
             showClock="true"
             logoUri="pkg:/images/hd_overhang_logo.png"
-            translation="[1000,20]"
+            translation="[730,0]"
         />
         <Label
             id="hostWelcome"
-            text="Welcome, Host"
-            width="300"
-            translation="[70,70]"
+            text="Welcome to 1075 Treat Ave."
+            width="500"
+            translation="[100,70]"
             font="font:LargeBoldSystemFont"
             color="0x666666"
         />
         <Label
             id="selectListing"
-            text="Please select your listing"
+            text="Please select your next guest"
             width="500"
-            translation="[70,120]"
+            translation="[100,120]"
             font="font:MediumSystemFont"
             color="0x666666"
         />
