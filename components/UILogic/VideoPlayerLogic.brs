@@ -1,5 +1,3 @@
-' ********** Copyright 2020 Roku Corp.  All Rights Reserved. **********
-
 ' Note that we need to import this file in MainScene.xml using relative path.
 
 sub ShowVideoScreen(content as Object, itemIndex as Integer)
@@ -31,15 +29,6 @@ sub ShowVideoScreen(content as Object, itemIndex as Integer)
     m.videoPlayer.loop = "true" 'auto restart the playlist
     m.videoPlayer.ObserveField("state", "OnVideoPlayerStateChange")
     m.videoPlayer.ObserveField("visible", "OnVideoVisibleChange")
-    numberPlays = 0
-    while numberPlays < 6
-        for i=1 to 6
-            numberPlays = numberPlays +1
-            print "number of plays is "; numberPlays
-        end for
-        m.videopPlayer.loop(false)
-        print "Ended loop after"; numberPlays "number of plays"
-    end while
 end sub
 
 sub OnVideoPlayerStateChange() ' invoked when video state is changed
