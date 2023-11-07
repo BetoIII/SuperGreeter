@@ -1,5 +1,3 @@
-' ********** Copyright 2020 Roku Corp.  All Rights Reserved. **********
-
 ' Note that we need to import this file in MainScene.xml using relative path.
 
 sub ShowVideoScreen(content as Object, itemIndex as Integer)
@@ -28,14 +26,18 @@ sub ShowVideoScreen(content as Object, itemIndex as Integer)
     m.videoPlayer.contentIsPlaylist = true ' enable video playlist (a sequence of videos to be played)
     ShowScreen(m.videoPlayer) ' show video screen
     m.videoPlayer.control = "play" ' start playback
+    m.videoPlayer.loop = "true" 'auto restart the playlist
     m.videoPlayer.ObserveField("state", "OnVideoPlayerStateChange")
     m.videoPlayer.ObserveField("visible", "OnVideoVisibleChange")
 end sub
 
 sub OnVideoPlayerStateChange() ' invoked when video state is changed
     state = m.videoPlayer.state
-    ' close video screen in case of error or end of playback
-    if state = "error" or state = "finished"
+    ' close video screen in case of error
+    if state = "error"
+        CloseScreen(m.videoPlayer)
+    end if
+    if state = "finished"
         CloseScreen(m.videoPlayer)
     end if
 end sub
