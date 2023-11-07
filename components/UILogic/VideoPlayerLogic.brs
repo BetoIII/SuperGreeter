@@ -28,14 +28,27 @@ sub ShowVideoScreen(content as Object, itemIndex as Integer)
     m.videoPlayer.contentIsPlaylist = true ' enable video playlist (a sequence of videos to be played)
     ShowScreen(m.videoPlayer) ' show video screen
     m.videoPlayer.control = "play" ' start playback
+    m.videoPlayer.loop = "true" 'auto restart the playlist
     m.videoPlayer.ObserveField("state", "OnVideoPlayerStateChange")
     m.videoPlayer.ObserveField("visible", "OnVideoVisibleChange")
+    numberPlays = 0
+    while numberPlays < 6
+        for i=1 to 6
+            numberPlays = numberPlays +1
+            print "number of plays is "; numberPlays
+        end for
+        m.videopPlayer.loop(false)
+        print "Ended loop after"; numberPlays "number of plays"
+    end while
 end sub
 
 sub OnVideoPlayerStateChange() ' invoked when video state is changed
     state = m.videoPlayer.state
-    ' close video screen in case of error or end of playback
-    if state = "error" or state = "finished"
+    ' close video screen in case of error
+    if state = "error"
+        CloseScreen(m.videoPlayer)
+    end if
+    if state = "finished"
         CloseScreen(m.videoPlayer)
     end if
 end sub

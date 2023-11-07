@@ -19,6 +19,10 @@ sub OnItemFocused() ' invoked when another item is focused
     m.descriptionLabel.text = item.description
     ' update title label with title of focused item
     m.titleLabel.text = item.title
+    ' adding length of playback to the title if item length field was populated
+    if item.length <> invalid and item.length <> 0
+        m.titleLabel.text += " | Length:" + GetTime(item.length)
+    end if
 end sub
 
 ' this method convert seconds to mm:ss format
