@@ -26,7 +26,7 @@
         />
         <Label
             id="selectListing"
-            text="Please select your next guest"
+            text="Please select your next reservation"
             width="500"
             translation="[100,120]"
             font="font:MediumSystemFont"
