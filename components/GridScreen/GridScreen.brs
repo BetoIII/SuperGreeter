@@ -3,7 +3,6 @@
 sub Init()
     m.rowList = m.top.FindNode("rowList")
     m.rowList.SetFocus(true)
-    ' label with item description
     m.longDescriptionLabel = m.top.FindNode("longDescriptionLabel")
     m.shortDescriptionLabel = m.top.FindNode("shortDescriptionLabel")
     m.titleLabel = m.top.FindNode("titleLabel")

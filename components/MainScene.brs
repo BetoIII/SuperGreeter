@@ -7,7 +7,7 @@ sub Init()
     m.loadingIndicator = m.top.FindNode("loadingIndicator") ' store loadingIndicator node to m
     InitScreenStack()
     ShowGridScreen()
-    RunContentTask() ' retrieving content
+    RunContentTask()
 end sub
 
 ' The OnKeyEvent() function receives remote control key events
