@@ -26,8 +26,8 @@
         />
         <Label
             id="selectListing"
-            text="Please select your next reservation"
-            width="500"
+            text="Select a greeting from your next reservations"
+            width="600"
             translation="[100,120]"
             font="font:MediumSystemFont"
             color="0x666666"
