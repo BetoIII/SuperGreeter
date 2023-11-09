@@ -11,7 +11,7 @@ sub GetContent()
     ' request the content feed from the API
     xfer = CreateObject("roURLTransfer")
     xfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
-    xfer.SetURL("https://supergreeter.co/content/screenhost-feed.json")
+    xfer.SetURL("https://supergreeter.co/content/screenhost-feed-hack.json")
     rsp = xfer.GetToString()
     rootChildren = []
     rows = {}
@@ -49,11 +49,8 @@ function GetItemData(video as Object) as Object
     item = {}
     ' populate some standard content metadata fields to be displayed on the GridScreen
     ' https://developer.roku.com/docs/developer-program/getting-started/architecture/content-metadata.md
-    if video.longDescription <> invalid
-        item.description = video.longDescription
-    else
-        item.description = video.shortDescription
-    end if
+    item.longDescription = video.longDescription
+    item.shortDescription = video.shortDescription
     item.hdPosterURL = video.thumbnail
     item.title = video.title
     item.releaseDate = video.releaseDate

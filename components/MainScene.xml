@@ -22,15 +22,15 @@
             width="500"
             translation="[100,70]"
             font="font:LargeBoldSystemFont"
-            color="0x666666"
+            color="0x444444"
         />
         <Label
-            id="selectListing"
-            text="Please select your next guest"
-            width="500"
-            translation="[100,120]"
+            id="selectReservation"
+            text="Select a greeting from your next reservations"
+            width="600"
+            translation="[100,110]"
             font="font:MediumSystemFont"
-            color="0x666666"
+            color="0x555555"
         />
         <!-- LoadingIndicator should be visible only in case of waiting for content -->
         <Label

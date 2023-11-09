@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--********** Copyright 2020 Roku Corp.  All Rights Reserved. **********-->
 
 <component name="GridScreen" extends="Group"  initialFocus="RowList">
     <script type="text/brightscript" uri="GridScreen.brs" />
@@ -10,35 +9,84 @@
         <field id="jumpToRowItem" type="intarray" alias="RowList.jumpToRowItem" />
     </interface>
     <children>
-         <!-- Label with the short description content -->
+        <Rectangle
+            id="reservationRectangle"
+            color="0xf6f6f6"
+            width="840"
+            height="340"
+            translation="[100,260]" 
+        />
+        <Label
+            id="reservationLabel"
+            color="0x888888"
+            width="700"
+            height="400"
+            translation="[140, 290]"
+            font="font:MediumSystemFont"
+        />
         <Label
 	        id="titleLabel"
 	        width="1020"
-			translation="[130,270]"
-            font="font:MediumBoldSystemFont"
+			translation="[520,365]"
+            font="font:LargeSystemFont"
             color="0xFFA346"
             visible="true"
 	    />
-        <!-- Label with description of content.
-	         wrap="true" and numLines="3" means that the text can be broken into three lines -->
+        <!-- the distance b/t these two labels should be 45 -->
         <Label
-	        id="descriptionLabel"
-	        wrap="true"
-	        width="1020"
-	        numLines="3"
-			translation="[130,320]"
+            id="arrivesLabel"
+            text="Arrives:"
+            width="600"
+            translation="[520,410]"
+            font="font:SmallBoldSystemFont"
             color="0x666666"
+        />
+        <Label
+	        id="longDescriptionLabel"
+	        wrap="true"
+	        width="1000"
+	        numLines="1"
+			translation="[520,440]"
+            color="0x666666"
+            font="font:SmallSystemFont"
 	    />
+        <Label
+            id="departsLabel"
+            text="Departs:"
+            width="600"
+            translation="[520,480]"
+            font="font:SmallBoldSystemFont"
+            color="0x666666"
+        />
+        <Label
+	        id="shortDescriptionLabel"
+	        wrap="true"
+	        width="1000"
+	        numLines="1"
+			translation="[520,510]"
+            color="0x666666"
+            font="font:SmallSystemFont"
+	    />
+        <Label
+            id="viaLabel"
+            text="Via:"
+            width="600"
+            translation="[680,330]"
+            font="font:SmallBoldSystemFont"
+            color="0x666666"
+            visible="false"  
+        />
         <RowList
             itemComponentName="RowListItemComponent"
             id="rowList"
-            translation="[80,400]"
+            translation="[80,350]"
             numRows="2"
-            rowitemSize="[[320,180]]"
+            rowitemSize="[[320,182]]"
             rowItemSpacing="[[20,0]]"
+            rowHeights="[420,420,420]"
             itemSize="[1100,270]"
             rowLabelOffset="[[50,20]]"
-            focusXOffset="[50]"
+            focusXOffset="[70]"
             showRowLabel="[false]"
             rowFocusAnimationStyle="floatingfocus"
         />
