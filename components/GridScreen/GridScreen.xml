@@ -12,15 +12,22 @@
         <Rectangle
             id="reservationRectangle"
             color="0xf6f6f6"
+            width="840"
+            height="340"
+            translation="[100,260]" 
+        />
+        <Label
+            id="reservationLabel"
+            color="0x888888"
             width="700"
             height="400"
-            translation="[100,240]" 
+            translation="[140, 290]"
+            font="font:MediumSystemFont"
         />
-         <!-- Label with the short description content -->
         <Label
 	        id="titleLabel"
 	        width="1020"
-			translation="[520,330]"
+			translation="[520,335]"
             font="font:LargeSystemFont"
             color="0xFFA346"
             visible="true"
@@ -48,7 +55,7 @@
             id="departsLabel"
             text="Departs:"
             width="600"
-            translation="[520,480]"
+            translation="[520,450]"
             font="font:SmallBoldSystemFont"
             color="0x666666"
         />
@@ -57,10 +64,18 @@
 	        wrap="true"
 	        width="1000"
 	        numLines="1"
-			translation="[520,510]"
+			translation="[520,480]"
             color="0x666666"
             font="font:SmallSystemFont"
 	    />
+        <Label
+            id="viaLabel"
+            text="Via:"
+            width="600"
+            translation="[680,380]"
+            font="font:SmallBoldSystemFont"
+            color="0x666666"
+        />
         <RowList
             itemComponentName="RowListItemComponent"
             id="rowList"

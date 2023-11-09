@@ -6,8 +6,8 @@ sub Init()
     ' label with item description
     m.longDescriptionLabel = m.top.FindNode("longDescriptionLabel")
     m.shortDescriptionLabel = m.top.FindNode("shortDescriptionLabel")
-    ' label with item title
     m.titleLabel = m.top.FindNode("titleLabel")
+    m.reservationLabel = m.top.FindNode("reservationLabel")
     ' observe rowItemFocused so we can know when another item of rowList will be focused
     m.rowList.ObserveField("rowItemFocused", "OnItemFocused")
 end sub
@@ -18,8 +18,8 @@ sub OnItemFocused() ' invoked when another item is focused
     item = row.GetChild(focusedIndex[1]) ' get focused item
     m.shortDescriptionLabel.text = item.shortDescription
     m.longDescriptionLabel.text = item.longDescription
-    ' update title label with title of focused item
     m.titleLabel.text = item.title
+    m.reservationLabel.text = item.id
     ' adding length of playback to the title if item length field was populated
     if item.length <> invalid and item.length <> 0
         m.titleLabel.text += " | Length:" + GetTime(item.length)

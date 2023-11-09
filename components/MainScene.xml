@@ -22,7 +22,7 @@
             width="500"
             translation="[100,70]"
             font="font:LargeBoldSystemFont"
-            color="0x666666"
+            color="0x020381"
         />
         <Label
             id="selectListing"
@@ -30,7 +30,7 @@
             width="600"
             translation="[100,120]"
             font="font:MediumSystemFont"
-            color="0x666666"
+            color="0x020381"
         />
         <!-- LoadingIndicator should be visible only in case of waiting for content -->
         <Label
