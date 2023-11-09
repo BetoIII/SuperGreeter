@@ -75,6 +75,7 @@
             translation="[680,380]"
             font="font:SmallBoldSystemFont"
             color="0x666666"
+            visible="false"  
         />
         <RowList
             itemComponentName="RowListItemComponent"
