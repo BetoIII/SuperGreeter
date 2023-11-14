@@ -14,7 +14,7 @@
             color="0xf6f6f6"
             width="840"
             height="340"
-            translation="[100,260]" 
+            translation="[80,260]" 
         />
         <Label
             id="reservationLabel"

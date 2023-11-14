@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--********** Copyright 2020 Roku Corp.  All Rights Reserved. **********-->
 
 <component name="MainScene" extends="Scene">
     <script type="text/brightscript" uri="MainScene.brs" />
@@ -8,27 +7,26 @@
     <script type="text/brightscript" uri="UILogic/GridScreenLogic.brs" />
     <script type="text/brightscript" uri="UILogic/VideoPlayerLogic.brs" />
     <children>
-         <!-- Overhang with Roku Developers logo -->
          <Overhang
             id="overhang"
             showOptions="false"
             showClock="true"
             logoUri="pkg:/images/hd_overhang_logo.png"
-            translation="[730,0]"
+            translation="[0,0]"
         />
         <Label
             id="hostWelcome"
-            text="Welcome to 1075 Treat Ave."
+            text="Welcome, Topher"
             width="500"
-            translation="[100,70]"
+            translation="[80,170]"
             font="font:LargeBoldSystemFont"
             color="0xebebe9"
         />
         <Label
             id="selectReservation"
-            text="Select a greeting from your next reservations"
+            text="to 1075 Treat Ave."
             width="600"
-            translation="[100,110]"
+            translation="[80,210]"
             font="font:MediumSystemFont"
             color="0xebebe9"
         />
