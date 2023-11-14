@@ -22,7 +22,7 @@
             width="500"
             translation="[100,70]"
             font="font:LargeBoldSystemFont"
-            color="0x444444"
+            color="0xebebe9"
         />
         <Label
             id="selectReservation"
@@ -30,7 +30,7 @@
             width="600"
             translation="[100,110]"
             font="font:MediumSystemFont"
-            color="0x555555"
+            color="0xebebe9"
         />
         <!-- LoadingIndicator should be visible only in case of waiting for content -->
         <Label
