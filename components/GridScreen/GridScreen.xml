@@ -35,7 +35,7 @@
                     rowitemSize="[[320,182]]"
                     rowItemSpacing="[[20,0]]"
                     rowHeights="[420,420,420]"
-                    itemSize="[650,270]"
+                    itemSize="[700,270]"
                     rowLabelOffset="[[50,20]]"
                     focusXOffset="[70]"
                     showRowLabel="[false]"
@@ -45,13 +45,12 @@
             <Group>
                 <LayoutGroup
                     itemSpacings="[20]"
-                    translation="[0, 0]"
                     layoutDirection="vert">
                     <!-- Reservation Details -->
                     <Rectangle
                         color="0xebebe9"
-                        width="360"
-                        height="140">
+                        width="350"
+                        height="130">
                         <Label
                             font="font:SmallestSystemFont"
                             text="Reservation"
@@ -69,7 +68,7 @@
                                 text="Check-In"
                                 width="120"
                                 wrap="false"
-                                horizAlign="center"
+                                horizAlign="left"
                                 font="font:SmallBoldSystemFont"
                                 color="0x666666"
                             />
@@ -77,7 +76,7 @@
                                 id="longDescriptionLabel"
                                 width="120"
                                 wrap="false"
-                                horizAlign="center"
+                                horizAlign="left"
                                 color="0x666666"
                                 font="font:SmallSystemFont"
                             />
@@ -94,7 +93,7 @@
                                 text="Check-Out"
                                 width="120"
                                 wrap="false"
-                                horizAlign="center"
+                                horizAlign="right"
                                 font="font:SmallBoldSystemFont"
                                 color="0x666666"
                             />
@@ -102,7 +101,7 @@
                                 id="shortDescriptionLabel"
                                 width="120"
                                 wrap="false"
-                                horizAlign="center"
+                                horizAlign="right"
                                 color="0x666666"
                                 font="font:SmallSystemFont"
                             />
