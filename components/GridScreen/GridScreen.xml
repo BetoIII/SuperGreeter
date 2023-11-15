@@ -46,22 +46,24 @@
                 <LayoutGroup
                     itemSpacings="[20]"
                     translation="[0, 0]"
-                    layoutDirection="vert"
-                    horizAlignment="center">
-                    <Label
-                        font="font:SmallestSystemFont"
-                        text="Reservation"
-                        color="0xebebe9"
-                        wrap="false"
-                    />
+                    layoutDirection="vert">
                     <!-- Reservation Details -->
                     <Rectangle
                         color="0xebebe9"
                         width="360"
                         height="140">
+                        <Label
+                            font="font:SmallestSystemFont"
+                            text="Reservation"
+                            color="0x888888"
+                            wrap="false"
+                            horizAlign="left"
+                            vertAlign="top"
+                            translation="[10, 10]"
+                        />
                         <LayoutGroup
                             itemSpacings="[10]"
-                            translation="[30, 30]">
+                            translation="[30, 50]">
                             <Label
                                 id="arrivesLabel"
                                 text="Check-In"
@@ -82,7 +84,7 @@
                         </LayoutGroup>
                         <LayoutGroup
                             itemSpacings="[10]"
-                            translation="[200, -7]">
+                            translation="[200, 13.5]">
                             <Label
                                 id="reservationLabel"
                                 visible="false"
