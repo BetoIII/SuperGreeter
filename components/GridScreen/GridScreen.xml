@@ -43,14 +43,55 @@
                 />
                 </LayoutGroup>
             <Group>
+                <!-- Wi-Fi Widget -->
                 <LayoutGroup
                     itemSpacings="[20]"
-                    layoutDirection="vert">
-                    <!-- Reservation Details -->
+                    layoutDirection="vert"
+                    translation="[0,-50]">
                     <Rectangle
                         color="0xebebe9"
                         width="350"
-                        height="130">
+                        height="115">
+                        <Label
+                            font="font:SmallestSystemFont"
+                            text="Wi-Fi"
+                            color="0x888888"
+                            wrap="true"
+                            horizAlign="left"
+                            vertAlign="top"
+                            translation="[10, 10]"
+                            width="180"
+                        />    
+                        <LayoutGroup
+                            itemSpacings="[20]"
+                            translation="[40, 10]"
+                            layoutDirection="horiz">
+                             <Label
+                                text="Instant Access:"
+                                wrap="false"
+                                horizAlign="left"
+                                vertAlign="bottom"
+                                font="font:SmallSystemFont"
+                                color="0x666666"
+                                height="60"
+                            />
+                            <Poster
+                                uri="https://supergreeter.co/wp-content/uploads/2023/11/1075-wifi.png"
+                                width="95"
+                                height="95"
+                            />
+                        </LayoutGroup>
+                    </Rectangle>
+                </LayoutGroup>
+                <!-- Reservation Details -->
+                <LayoutGroup
+                    itemSpacings="[20]"
+                    layoutDirection="vert"
+                    translation="[0,80]">                    
+                    <Rectangle
+                        color="0xebebe9"
+                        width="350"
+                        height="120">
                         <Label
                             font="font:SmallestSystemFont"
                             text="Reservation"
@@ -62,9 +103,8 @@
                         />
                         <LayoutGroup
                             itemSpacings="[10]"
-                            translation="[30, 50]">
+                            translation="[30, 40]">
                             <Label
-                                id="arrivesLabel"
                                 text="Check-In"
                                 width="120"
                                 wrap="false"
@@ -83,13 +123,12 @@
                         </LayoutGroup>
                         <LayoutGroup
                             itemSpacings="[10]"
-                            translation="[200, 13.5]">
+                            translation="[200, 4]">
                             <Label
                                 id="reservationLabel"
                                 visible="false"
                             />
                             <Label
-                                id="departsLabel"
                                 text="Check-Out"
                                 width="120"
                                 wrap="false"
