@@ -14,22 +14,6 @@
             logoUri="pkg:/images/hd_overhang_logo.png"
             translation="[0,0]"
         />
-        <Label
-            id="hostWelcome"
-            text="Welcome, Topher"
-            width="500"
-            translation="[80,170]"
-            font="font:LargeBoldSystemFont"
-            color="0xebebe9"
-        />
-        <Label
-            id="selectReservation"
-            text="to 1075 Treat Ave."
-            width="600"
-            translation="[80,210]"
-            font="font:MediumSystemFont"
-            color="0xebebe9"
-        />
         <!-- LoadingIndicator should be visible only in case of waiting for content -->
         <Label
             id="loadingIndicator"
