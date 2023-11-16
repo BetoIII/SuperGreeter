@@ -1,9 +1,7 @@
 ' entry point of  MainScene
-' Note that we need to import this file in MainScene.xml using relative path.
 sub Init()
     ' set background color for scene. Applied only if backgroundUri has empty value
-    m.top.backgroundColor = "0xf3ece7"
-    m.top.backgroundUri= ""
+    m.top.backgroundColor = "0x10100e"
     m.loadingIndicator = m.top.FindNode("loadingIndicator") ' store loadingIndicator node to m
     InitScreenStack()
     ShowGridScreen()

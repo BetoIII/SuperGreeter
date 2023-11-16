@@ -17,7 +17,8 @@ sub OnItemFocused() ' invoked when another item is focused
     item = row.GetChild(focusedIndex[1]) ' get focused item
     m.shortDescriptionLabel.text = item.shortDescription
     m.longDescriptionLabel.text = item.longDescription
-    m.titleLabel.text = item.title
+    m.titleLabel.text = "Welcome, "
+    m.titleLabel.text += item.title
     m.reservationLabel.text = item.id
     ' adding length of playback to the title if item length field was populated
     if item.length <> invalid and item.length <> 0
