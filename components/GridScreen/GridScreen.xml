@@ -165,12 +165,32 @@
                         </LayoutGroup>
                     </Rectangle>
                 </LayoutGroup>
-                <LabelList
-                    id="options"
-                    numRows="3"
-                    itemSpacing="[0,10]"
-                    itemSize="[293, 48]"
-                />
+                <!-- Welcome Menue -->
+                <LayoutGroup
+                    itemSpacings="[20]"
+                    layoutDirection="vert"
+                    translation="[0,220]">                    
+                    <Rectangle
+                        color="0xebebe9"
+                        width="350"
+                        height="120">
+                        <Label
+                            font="font:SmallestSystemFont"
+                            text="Menu"
+                            color="0x888888"
+                            wrap="false"
+                            horizAlign="left"
+                            vertAlign="top"
+                            translation="[10, 10]"
+                        />
+                        <LabelList
+                            id="buttons"
+                            numRows="3"
+                            itemSpacing="[0,10]"
+                            itemSize="[300, 48]"
+                        />
+                    </Rectangle>
+                </LayoutGroup>
             </Group>
         </LayoutGroup>
     </children>
