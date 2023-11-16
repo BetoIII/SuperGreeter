@@ -12,25 +12,43 @@
         <LayoutGroup
             translation="[80,220]" 
             layoutDirection="horiz"
-            horizAlignment="left"
-            itemSpacings="[40]">
+            itemSpacings="[20]">
             <LayoutGroup
-                    itemSpacings="[40]">
+                    itemSpacings="[30]">
                 <Label
                     id="titleLabel"
                     font="font:LargeSystemFont"
                     color="0xFFA346"
                 />
                 <Label
-                    id="welcomeMessage"
                     text="WE HOPE YOU ENJOY YOUR STAY"
                     font="font:LargeSystemFont"
                     color="0xebebe9"
+                    height="55"
                 />
+                <LayoutGroup
+                    itemSpacings="[20,0]"
+                    layoutDirection="horiz">
+                    <Label
+                        text="Your Host, Carly"
+                        font="font:LargeSystemFont"
+                        color="0xebebe9"
+                        horizAlign="right"
+                        vertAlign="center"
+                        wrap="false"
+                        height="60"
+                        width="650"
+                    />
+                    <Poster
+                        uri="https://supergreeter.co/wp-content/uploads/2023/11/carly-host.png"
+                        width="60"
+                        height="60"
+                    />
+                </LayoutGroup>
                 <RowList
                     itemComponentName="RowListItemComponent"
                     id="rowList"
-                    translation="[80,450]"
+                    translation="[80,280]"
                     numRows="2"
                     rowitemSize="[[320,182]]"
                     rowItemSpacing="[[20,0]]"
