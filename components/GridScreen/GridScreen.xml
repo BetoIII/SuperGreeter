@@ -183,11 +183,14 @@
                             vertAlign="top"
                             translation="[10, 10]"
                         />
-                        <LabelList
-                            id="buttons"
-                            numRows="3"
-                            itemSpacing="[0,10]"
-                            itemSize="[300, 48]"
+                        <Button
+                            id="welcomeButton"
+                            text = "Welcome!"
+                            showFocusFootprint = "true"
+                            minWidth = "240"
+                            translation="[30, 40]"
+                            font="font:SmallBoldSystemFont"
+                            color="0x666666" 
                         />
                     </Rectangle>
                 </LayoutGroup>
