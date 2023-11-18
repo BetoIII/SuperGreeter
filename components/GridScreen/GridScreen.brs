@@ -20,8 +20,4 @@ sub OnItemFocused() ' invoked when another item is focused
     m.titleLabel.text = "Welcome, "
     m.titleLabel.text += item.title
     m.reservationLabel.text = item.id
-    ' adding length of playback to the title if item length field was populated
-    if item.length <> invalid and item.length <> 0
-        m.titleLabel.text += " | Length:" + GetTime(item.length)
-    end if
 end sub

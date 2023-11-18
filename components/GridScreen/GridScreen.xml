@@ -186,11 +186,12 @@
                         <Button
                             id="welcomeButton"
                             text = "Welcome!"
+                            horizAlign="center"
                             showFocusFootprint = "true"
                             minWidth = "240"
                             translation="[30, 40]"
                             font="font:SmallBoldSystemFont"
-                            color="0x666666" 
+                            textColor="0x444444" 
                         />
                     </Rectangle>
                 </LayoutGroup>
