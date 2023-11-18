@@ -184,8 +184,7 @@
                             translation="[10, 10]"
                         />
                         <Button
-                            id="welcomeButton"
-                            text = "Welcome!"
+                            id="menu"
                             horizAlign="center"
                             showFocusFootprint = "true"
                             minWidth = "240"

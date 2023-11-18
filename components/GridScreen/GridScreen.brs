@@ -9,7 +9,19 @@ sub Init()
     m.reservationLabel = m.top.FindNode("reservationLabel")
     ' observe rowItemFocused so we can know when another item of rowList will be focused
     m.rowList.ObserveField("rowItemFocused", "OnItemFocused")
+    m.menu = m.top.FindNode("menu")
+    menuEmojis()
 end sub
+
+function menuEmojis()
+    welcomeMenu = createObject("roSGNode", "EmojiLabel")
+    welcomeMenu.text = "👋" + "Bienvenidos!"
+    welcomeMenu.translation=[20, 25]
+    welcomeMenu.height = 18
+    welcomeMenu.vertAlign = "center"
+    welcomeMenu.color = &h00444444
+    m.menu.appendChild(welcomeMenu)
+end function
 
 sub OnItemFocused() ' invoked when another item is focused
     focusedIndex = m.rowList.rowItemFocused ' get position of focused item
