@@ -15,8 +15,8 @@ end sub
 
 function menuEmojis()
     welcomeMenu = createObject("roSGNode", "EmojiLabel")
-    welcomeMenu.text = "👋" + "Bienvenidos!"
-    welcomeMenu.translation=[20, 25]
+    welcomeMenu.text = "👋 " + "Welcome!"
+    welcomeMenu.translation=[50, 25]
     welcomeMenu.height = 18
     welcomeMenu.vertAlign = "center"
     welcomeMenu.color = &h00444444

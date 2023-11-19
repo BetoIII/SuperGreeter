@@ -10,7 +10,7 @@
     </interface>
     <children>
         <LayoutGroup
-            translation="[80,220]" 
+            translation="[80,180]" 
             layoutDirection="horiz"
             itemSpacings="[20]">
             <LayoutGroup
@@ -165,7 +165,7 @@
                         </LayoutGroup>
                     </Rectangle>
                 </LayoutGroup>
-                <!-- Welcome Menue -->
+                <!-- Welcome Menu -->
                 <LayoutGroup
                     itemSpacings="[20]"
                     layoutDirection="vert"
@@ -173,7 +173,7 @@
                     <Rectangle
                         color="0xebebe9"
                         width="350"
-                        height="120">
+                        height="220">
                         <Label
                             font="font:SmallestSystemFont"
                             text="Menu"
@@ -185,10 +185,9 @@
                         />
                         <Button
                             id="menu"
-                            horizAlign="center"
                             showFocusFootprint = "true"
-                            minWidth = "240"
-                            translation="[30, 40]"
+                            minWidth = "280"
+                            translation="[35, 40]"
                             font="font:SmallBoldSystemFont"
                             textColor="0x444444" 
                         />
