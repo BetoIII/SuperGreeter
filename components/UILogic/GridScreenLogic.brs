@@ -1,4 +1,3 @@
-' ********** Copyright 2020 Roku Corp.  All Rights Reserved. **********
 
 ' Note that we need to import this file in MainScene.xml using relative path.
 
@@ -14,6 +13,7 @@ sub OnGridScreenItemSelected(event as Object) ' invoked when GridScreen item is 
     m.selectedIndex = event.GetData()
     ' the entire row from the RowList will be used by the Video node
     rowContent = grid.content.GetChild(m.selectedIndex[0])
-    itemIndex = m.selectedIndex[1]
-    ShowVideoScreen(rowContent, itemIndex)
+    ' itemIndex = m.selectedIndex[1]
+    ' ShowVideoScreen(rowContent, itemIndex)
+    ShowDetailsScreen(rowContent, m.selectedIndex[1])
 end sub

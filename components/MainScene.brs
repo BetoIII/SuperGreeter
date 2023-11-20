@@ -6,7 +6,18 @@ sub Init()
     InitScreenStack()
     ShowGridScreen()
     RunContentTask()
+    m.emojiOnRoku = createObject("roSGNode", "ComponentLibrary")
+    m.emojiOnRoku.id = "EmojiOnRoku"
+    m.emojiOnRoku.observeField("loadStatus", "onLibLoaded")
 end sub
+
+function onLibLoaded()
+    if m.emojiOnRoku.loadStatus = "ready"
+        print "Emoji Library Success!"
+    else if m.emojiOnRoku.loadStatus = "failed"
+        print "Failed to load emoji Library!"
+    end if
+end function
 
 ' The OnKeyEvent() function receives remote control key events
 function OnkeyEvent(key as String, press as Boolean) as Boolean

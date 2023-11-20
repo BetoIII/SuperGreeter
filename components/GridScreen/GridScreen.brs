@@ -9,7 +9,37 @@ sub Init()
     m.reservationLabel = m.top.FindNode("reservationLabel")
     ' observe rowItemFocused so we can know when another item of rowList will be focused
     m.rowList.ObserveField("rowItemFocused", "OnItemFocused")
+    m.menu = m.top.FindNode("welcomeButton")
+    m.home = m.top.FindNode("homeButton")
+    m.local = m.top.FindNode("localButton")
+    menuEmojis()
 end sub
+
+function menuEmojis()
+    welcomeButton = createObject("roSGNode", "EmojiLabel")
+    welcomeButton.text = "👋 " + "Welcome!"
+    welcomeButton.translation=[70, 25]
+    welcomeButton.height = 18
+    welcomeButton.vertAlign = "center"
+    welcomeButton.color = &h00666666
+    m.menu.appendChild(welcomeButton)
+
+    homeButton = createObject("roSGNode", "EmojiLabel")
+    homeButton.text = "🏡 " + "Manual"
+    homeButton.translation=[80, 25]
+    homeButton.height = 18
+    homeButton.vertAlign = "center"
+    homeButton.color = &h00666666
+    m.home.appendChild(homeButton)
+
+    localButton = CreateObject("roSGNode", "EmojiLabel")
+    localButton.text = "🍜 " + "Recommended"
+    localButton.translation=[40, 25]
+    localButton.height = 18
+    localButton.vertAlign = "center"
+    localButton.color = &h00666666
+    m.local.appendChild(localButton)
+end function
 
 sub OnItemFocused() ' invoked when another item is focused
     focusedIndex = m.rowList.rowItemFocused ' get position of focused item
@@ -20,21 +50,4 @@ sub OnItemFocused() ' invoked when another item is focused
     m.titleLabel.text = "Welcome, "
     m.titleLabel.text += item.title
     m.reservationLabel.text = item.id
-    ' adding length of playback to the title if item length field was populated
-    if item.length <> invalid and item.length <> 0
-        m.titleLabel.text += " | Length:" + GetTime(item.length)
-    end if
 end sub
-
-' this method convert seconds to mm:ss format
-' getTime(138) returns 2:18
-function GetTime(length as Integer) as String
-    minutes = (length \ 60).ToStr()
-    seconds = length MOD 60
-    if seconds < 10
-       seconds = "0" + seconds.ToStr()
-    else
-       seconds = seconds.ToStr()
-    end if
-    return minutes + ":" + seconds
-end function
