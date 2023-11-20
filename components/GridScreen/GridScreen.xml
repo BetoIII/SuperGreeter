@@ -184,7 +184,7 @@
                             translation="[10, 10]"
                         />
                         <Button
-                            id="menu"
+                            id="welcomeButton"
                             showFocusFootprint = "true"
                             minWidth = "280"
                             translation="[35, 40]"
