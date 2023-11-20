@@ -10,17 +10,35 @@ sub Init()
     ' observe rowItemFocused so we can know when another item of rowList will be focused
     m.rowList.ObserveField("rowItemFocused", "OnItemFocused")
     m.menu = m.top.FindNode("welcomeButton")
+    m.home = m.top.FindNode("homeButton")
+    m.local = m.top.FindNode("localButton")
     menuEmojis()
 end sub
 
 function menuEmojis()
     welcomeButton = createObject("roSGNode", "EmojiLabel")
     welcomeButton.text = "👋 " + "Welcome!"
-    welcomeButton.translation=[50, 25]
+    welcomeButton.translation=[70, 25]
     welcomeButton.height = 18
     welcomeButton.vertAlign = "center"
-    welcomeButton.color = &h00444444
+    welcomeButton.color = &h00666666
     m.menu.appendChild(welcomeButton)
+
+    homeButton = createObject("roSGNode", "EmojiLabel")
+    homeButton.text = "🏡 " + "Manual"
+    homeButton.translation=[80, 25]
+    homeButton.height = 18
+    homeButton.vertAlign = "center"
+    homeButton.color = &h00666666
+    m.home.appendChild(homeButton)
+
+    localButton = CreateObject("roSGNode", "EmojiLabel")
+    localButton.text = "🍜 " + "Recommended"
+    localButton.translation=[40, 25]
+    localButton.height = 18
+    localButton.vertAlign = "center"
+    localButton.color = &h00666666
+    m.local.appendChild(localButton)
 end function
 
 sub OnItemFocused() ' invoked when another item is focused

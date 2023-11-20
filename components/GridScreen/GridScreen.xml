@@ -173,7 +173,7 @@
                     <Rectangle
                         color="0xebebe9"
                         width="350"
-                        height="220">
+                        height="250">
                         <Label
                             font="font:SmallestSystemFont"
                             text="Menu"
@@ -188,7 +188,20 @@
                             showFocusFootprint = "true"
                             minWidth = "280"
                             translation="[35, 40]"
-                            font="font:SmallBoldSystemFont"
+                            textColor="0x444444" 
+                        />
+                        <Button
+                            id="homeButton"
+                            showFocusFootprint = "true"
+                            minWidth = "280"
+                            translation="[35, 105]"
+                            textColor="0x222222" 
+                        />
+                        <Button
+                            id="localButton"
+                            showFocusFootprint = "true"
+                            minWidth = "280"
+                            translation="[35, 170]"
                             textColor="0x444444" 
                         />
                     </Rectangle>
