@@ -175,7 +175,7 @@
                         width="350"
                         height="250">
                         <Label
-                            font="font:SmallestSystemFont"
+                            id = "menu"
                             text="Menu"
                             color="0x888888"
                             wrap="false"

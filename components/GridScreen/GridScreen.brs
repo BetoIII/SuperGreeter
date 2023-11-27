@@ -9,11 +9,17 @@ sub Init()
     m.reservationLabel = m.top.FindNode("reservationLabel")
     ' observe rowItemFocused so we can know when another item of rowList will be focused
     m.rowList.ObserveField("rowItemFocused", "OnItemFocused")
-    m.menu = m.top.FindNode("welcomeButton")
+    m.menu = m.top.FindNode("menu")
+    m.welcome = m.top.FindNode("welcomeButton")
     m.home = m.top.FindNode("homeButton")
     m.local = m.top.FindNode("localButton")
     menuEmojis()
+    setFonts()
 end sub
+
+function setFonts()
+    m.menu.font.size = 12
+end function
 
 function menuEmojis()
     welcomeButton = createObject("roSGNode", "EmojiLabel")
@@ -22,7 +28,7 @@ function menuEmojis()
     welcomeButton.height = 18
     welcomeButton.vertAlign = "center"
     welcomeButton.color = &h00666666
-    m.menu.appendChild(welcomeButton)
+    m.welcome.appendChild(welcomeButton)
 
     homeButton = createObject("roSGNode", "EmojiLabel")
     homeButton.text = "🏡 " + "Manual"
