@@ -24,10 +24,10 @@
                     text="WE HOPE YOU ENJOY YOUR STAY"
                     font="font:LargeSystemFont"
                     color="0xebebe9"
-                    height="55"
+                    height="90"
                 />
                 <LayoutGroup
-                    itemSpacings="[20,0]"
+                    itemSpacings="[20]"
                     layoutDirection="horiz">
                     <Label
                         text="Your Host, Carly"
@@ -45,21 +45,29 @@
                         height="60"
                     />
                 </LayoutGroup>
-                <RowList
-                    itemComponentName="RowListItemComponent"
-                    id="rowList"
-                    translation="[80,280]"
-                    numRows="2"
-                    rowitemSize="[[320,182]]"
-                    rowItemSpacing="[[20,0]]"
-                    rowHeights="[420,420,420]"
-                    itemSize="[700,270]"
-                    rowLabelOffset="[[50,20]]"
-                    focusXOffset="[70]"
-                    showRowLabel="[false]"
-                    rowFocusAnimationStyle="floatingfocus"
-                />
+                <LayoutGroup
+                    itemSpacings="[0]"
+                    layoutDirection="vert">
+                    <!-- blank label for height -->
+                    <Label
+                        text=""
+                        height="0"
+                    />
+                    <RowList
+                        itemComponentName="RowListItemComponent"
+                        id="rowList"
+                        numRows="2"
+                        rowitemSize="[[320,182]]"
+                        rowItemSpacing="[[20,0]]"
+                        rowHeights="[420,420,420]"
+                        itemSize="[700,270]"
+                        rowLabelOffset="[[50,20]]"
+                        focusXOffset="[70]"
+                        showRowLabel="[false]"
+                        rowFocusAnimationStyle="floatingfocus"
+                    />
                 </LayoutGroup>
+            </LayoutGroup>
             <Group>
                 <!-- Wi-Fi Widget -->
                 <LayoutGroup
