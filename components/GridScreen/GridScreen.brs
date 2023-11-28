@@ -13,7 +13,9 @@ sub Init()
     m.access = m.top.FindNode("access")
     m.reservation = m.top.FindNode("reservation")
     m.checkInLabel = m.top.FindNode("checkInLabel")
+    m.checkInTime = m.top.FindNode("checkInTime")
     m.checkOutLabel = m.top.FindNode("checkOutLabel")
+    m.checkOutTime = m.top.FindNode("checkOutTime")
     m.menu = m.top.FindNode("menu")
     m.welcome = m.top.FindNode("welcomeButton")
     m.home = m.top.FindNode("homeButton")
@@ -29,6 +31,12 @@ function setFonts()
     m.checkInLabel.font.size = 18
     m.checkOutLabel.font.size = 18
     m.menu.font.size = 12
+
+    ' Dyamic Labels from json
+    m.longDescriptionLabel.font.size = m.longDescriptionLabel.font.size-8
+    m.checkInTime.font.size = m.checkInTime.font.size-8
+    m.shortDescriptionLabel.font.size = m.shortDescriptionLabel.font.size-8
+    m.checkOutTime.font.size = m.checkOutTime.font.size-8
 end function
 
 function menuEmojis()

@@ -124,12 +124,23 @@
                                 id="checkInLabel"
                                 text="Check-In"
                                 width="120"
+                                height="30"
                                 wrap="false"
                                 horizAlign="left"
                                 color="0x666666"
                             />
                             <Label
                                 id="longDescriptionLabel"
+                                width="120"
+                                height="20"
+                                wrap="false"
+                                horizAlign="left"
+                                color="0x666666"
+                                font="font:SmallSystemFont"
+                            />
+                            <Label
+                                id="checkInTime"
+                                text="3:00 PM"
                                 width="120"
                                 wrap="false"
                                 horizAlign="left"
@@ -138,18 +149,28 @@
                             />
                         </LayoutGroup>
                         <LayoutGroup
-                            itemSpacings="[10]"
                             translation="[200, 10]">
                             <Label
                                 id="checkOutLabel"
                                 text="Check-Out"
                                 width="120"
+                                height="30"
                                 wrap="false"
                                 horizAlign="right"
                                 color="0x666666"
                             />
                             <Label
                                 id="shortDescriptionLabel"
+                                width="120"
+                                height="20"
+                                wrap="false"
+                                horizAlign="right"
+                                color="0x666666"
+                                font="font:SmallSystemFont"
+                            />
+                            <Label
+                                id="checkOutTime"
+                                text="11:00 AM"
                                 width="120"
                                 wrap="false"
                                 horizAlign="right"
