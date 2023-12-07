@@ -26,7 +26,7 @@ end sub
 
 function setFonts()
     m.wifi.font.size = 12
-    m.access.font.size = 14
+    m.access.font.size = 16
     m.reservation.font.size = 12
     m.checkInLabel.font.size = 18
     m.checkOutLabel.font.size = 18

@@ -48,7 +48,7 @@
                 <LayoutGroup
                     itemSpacings="[0]"
                     layoutDirection="vert">
-                    <!-- blank label for height -->
+                    <!-- blank label for spacing -->
                     <Label
                         text=""
                         height="0"
@@ -71,6 +71,7 @@
             <Group>
                 <!-- Wi-Fi Widget -->
                 <LayoutGroup
+                    itemSpacings="[5]"
                     layoutDirection="vert"
                     translation="[0,0]">
                     <Label
@@ -89,22 +90,22 @@
                         height="90">
                         <LayoutGroup
                             itemSpacings="[20]"
-                            translation="[40, 0]"
+                            translation="[0, 5]"
                             layoutDirection="horiz">
                              <Label
                                 id="access"
                                 text="Instant Access:"
                                 wrap="false"
-                                horizAlign="left"
+                                horizAlign="right"
                                 vertAlign="bottom"
                                 color="0x666666"
-                                height="55"
-                                width="200"
+                                height="50"
+                                width="180"
                             />
                             <Poster
                                 uri="https://supergreeter.co/wp-content/uploads/2023/11/1075-wifi.png"
-                                width="85"
-                                height="85"
+                                width="80"
+                                height="80"
                             />
                         </LayoutGroup>
                     </Rectangle>
