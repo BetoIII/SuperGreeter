@@ -11,7 +11,7 @@ sub GetContent()
     ' request the content feed from the API
     xfer = CreateObject("roURLTransfer")
     xfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
-    xfer.SetURL("https://supergreeter.co/content/screenhost-feed-hack.json")
+    xfer.SetURL("https://agiato.llc/content/screenhost-feed-hack.json")
     rsp = xfer.GetToString()
     rootChildren = []
     rows = {}
